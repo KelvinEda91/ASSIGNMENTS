@@ -8,9 +8,10 @@ def lottery_gen():
     random_number = random.randint( min_number, max_number)
 
     # Get user name and input number
-    user_name = input("please input your name: ")
+    user_name = input("please enter your name: ")
     user_number = (int(input("Please enter your number: ")))
     print (user_name)
+    
     # the winning number
     winning_number = 30
     
@@ -23,7 +24,7 @@ def lottery_gen():
     if random_number == user_number == winning_number:
         print(f"Congratulations {user_number}! Your lucky number is {winning_number}. You are the lucky winner!")
     else:
-        print(f"you chose number {user_number}, sorry, the generated number is  {random_number} so is not the winning number. Please try again.")
+        print(f"you chose number {user_number}. sorry, the generated number is  {random_number} and it's not the winning number. Please try again. {user_name}")
 
 # Call the lottery_gen() function to run the program
 lottery_gen()
